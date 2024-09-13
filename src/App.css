@@ -1,0 +1,8 @@
+*{
+    font-family: 'Barlow Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}  /*CLASSE PARA useEffect CRIADO PELO MANO GPT PARA NÃO TER SCROLL NA HOME (ESTÁ ATIVO APENAS NA HOME)*/

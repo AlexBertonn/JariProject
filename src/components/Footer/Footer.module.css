@@ -1,0 +1,42 @@
+footer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 10px;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 99vw;
+}
+
+footer p{
+    font-size: 0.9vw;
+    text-align: end;
+}
+
+footer h1 {
+    font-size: 0.8vw;
+    font: bold;
+    text-align: end;
+    justify-content: end;
+}
+
+.logoFooter{
+    width: 100px;
+    height: 100%;
+}
+
+.infoFooter{
+    width: 400px;
+}
+
+.logoBlack {
+    background-image: url('../../images/logo-der3.png'); /* Caminho para a imagem */
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
