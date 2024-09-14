@@ -4,22 +4,24 @@ import Header from '../../components/Header'
 import styles from '../Home/Home.module.css'
 
 import React, { useEffect } from 'react'; //IMPORT PARA O useEffect QUE O AMIGO GPT FEZ.
+import Container from '../../components/Container';
 
 
 function Home() {
 
-  useEffect(() => {
-    // Adiciona a classe para remover o scroll vertical
-    document.body.classList.add('no-scroll');
+  // useEffect(() => {
+  //   // Adiciona a classe para remover o scroll vertical
+  //   document.body.classList.add('no-scroll');
 
-    // Remove a classe quando o componente é desmontado
-    return () => document.body.classList.remove('no-scroll');
-  }, []);
+  //   // Remove a classe quando o componente é desmontado
+  //   return () => document.body.classList.remove('no-scroll');
+  // }, []);
 
 
   return (
     <>
       <Header/>
+      <Container>
       <section className={styles.homeBack}>
         <main className={styles.home}>
             <div className={styles.titulo}>
@@ -33,6 +35,7 @@ function Home() {
             </div>
         </main>
       </section>
+      </Container>
       <Footer/>
     </>
   )
