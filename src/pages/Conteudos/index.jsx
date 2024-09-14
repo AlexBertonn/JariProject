@@ -2,18 +2,39 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import styles from "../Conteudos/Conteudos.module.css"
-
-import React, { useEffect } from 'react'; //IMPORT PARA O useEffect QUE O AMIGO GPT FEZ.
+import logo from '../../images/testeJari.png'
+import React, { useEffect, useState} from 'react'; //IMPORT PARA O useEffect QUE O AMIGO GPT FEZ.
 
 function Conteudos(){
 
-    // useEffect(() => {
-    //     // Adiciona a classe para remover o scroll vertical
-    //     document.body.classList.add('no-scroll');
-    
-    //     // Remove a classe quando o componente é desmontado
-    //     return () => document.body.classList.remove('no-scroll');
-    //   }, []);
+    const [isLargeScreen, setIsLargeScreen] = useState(
+        window.innerWidth >= 1280 && window.innerHeight >= 720
+    );
+
+    useEffect(() => {
+        const handleResize = () => {
+            const isLarge = window.innerWidth >= 1280 && window.innerHeight >= 720;
+            setIsLargeScreen(isLarge);
+
+            // Adiciona ou remove a classe 'no-scroll' com base no tamanho da tela
+            if (isLarge) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+        };
+
+        // Adiciona o listener para redimensionamento
+        window.addEventListener('resize', handleResize);
+
+        // Executa a lógica de redimensionamento inicialmente
+        handleResize();
+
+        // Limpeza do listener
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return(
         <>
@@ -21,12 +42,15 @@ function Conteudos(){
         <Container>
         <main className={styles.mainConteudos}>
             <div className={styles.containerConteudos}>
-                <div className={styles.boxConteudos}>O QUE É A JARI?</div>
-                <div className={styles.boxConteudos}>MATERIAL DIDÁTICO</div>
-                <div className={styles.boxConteudos}>CÓDIGOS</div>
-                <div className={styles.boxConteudos}>DILIGÊNCIAS</div>
-                <div className={styles.boxConteudos}>TUTORIAIS</div>
-                <div className={styles.boxConteudos}>LINKS IMPORTANTES</div>
+                <div className={styles.boxConteudos}>
+                    <h1 className={styles.h1Conteudos}>O QUE É A JARI?</h1>
+                    <p><img src={logo} alt="Jari" style={{width:'150px', height:'150px'}}/></p>
+                </div>
+                <div className={styles.boxConteudos}><h1 className={styles.h1Conteudos}>MATERIAL DIDÁTICO</h1></div>
+                <div className={styles.boxConteudos}><h1 className={styles.h1Conteudos}>CÓDIGOS</h1></div>
+                <div className={styles.boxConteudos}><h1 className={styles.h1Conteudos}>DILIGÊNCIAS</h1></div>
+                <div className={styles.boxConteudos}><h1 className={styles.h1Conteudos}>TUTORIAIS</h1></div>
+                <div className={styles.boxConteudos}><h1 className={styles.h1Conteudos}>LINKS IMPORTANTES</h1></div>
             </div>
         </main>
         </Container>

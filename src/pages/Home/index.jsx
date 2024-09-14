@@ -3,19 +3,40 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import styles from '../Home/Home.module.css'
 
-import React, { useEffect } from 'react'; //IMPORT PARA O useEffect QUE O AMIGO GPT FEZ.
+import React, { useEffect, useState} from 'react'; //IMPORT PARA O useEffect QUE O AMIGO GPT FEZ.
 import Container from '../../components/Container';
 
 
 function Home() {
 
-  // useEffect(() => {
-  //   // Adiciona a classe para remover o scroll vertical
-  //   document.body.classList.add('no-scroll');
+  const [isLargeScreen, setIsLargeScreen] = useState(
+    window.innerWidth >= 1280 && window.innerHeight >= 720
+);
 
-  //   // Remove a classe quando o componente é desmontado
-  //   return () => document.body.classList.remove('no-scroll');
-  // }, []);
+useEffect(() => {
+    const handleResize = () => {
+        const isLarge = window.innerWidth >= 1280 && window.innerHeight >= 720;
+        setIsLargeScreen(isLarge);
+
+        // Adiciona ou remove a classe 'no-scroll' com base no tamanho da tela
+        if (isLarge) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+
+    // Adiciona o listener para redimensionamento
+    window.addEventListener('resize', handleResize);
+
+    // Executa a lógica de redimensionamento inicialmente
+    handleResize();
+
+    // Limpeza do listener
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+}, []);
 
 
   return (
