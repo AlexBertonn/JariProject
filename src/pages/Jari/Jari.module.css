@@ -1,0 +1,18 @@
+.jari{
+    border: solid 2px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.containerJari{
+    display: flex;
+    justify-content: center;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
