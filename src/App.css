@@ -6,3 +6,25 @@
 .no-scroll {
     overflow-y: hidden;
 }  /*CLASSE PARA useEffect CRIADO PELO MANO GPT PARA NÃO TER SCROLL NA HOME (ESTÁ ATIVO APENAS NA HOME)*/
+
+
+
+/* CSS do scroll */
+::-webkit-scrollbar {
+    width: 5px; 
+    height: 10px; 
+}
+
+ ::-webkit-scrollbar-thumb { /* Thumb é o nome da barra em si */
+    background: #414141; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {  /* O backgorund do scroll */
+    background: #808080; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d1d1d; 
+}

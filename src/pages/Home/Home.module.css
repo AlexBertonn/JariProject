@@ -10,7 +10,7 @@
     align-items: flex-end;
     justify-content: space-between;
     margin: 0 auto;
-    height: 80%;
+    /* height: 80%; */
     width: 100%;
 }
 
@@ -73,9 +73,10 @@ span{
     background-image: url('../../images/estrada-background.png'); /* Caminho da imagem */
     background-size: cover;       
     background-position: center;
-    height: 92.6vh; /* GAMBIARRA DO CÃO KKK */
+    height: ; /* GAMBIARRA DO CÃO KKK */
     display: flex;
     align-items: center;
+    flex: 1;
     /* border: solid 2px green;  */
     
 }

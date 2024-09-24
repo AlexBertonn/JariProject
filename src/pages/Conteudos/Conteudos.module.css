@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 93vh;
+    /* height: 100vh; */
+    flex: auto;
     background-image: url('../../images/backConteudos.png');
 }
 
@@ -16,7 +17,6 @@
     height: 80%;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .boxConteudos{
@@ -30,6 +30,7 @@
     cursor: pointer;
     color: #fff;
     justify-content: center;
+    margin: 50px;
 }
 
 .boxConteudos:hover{

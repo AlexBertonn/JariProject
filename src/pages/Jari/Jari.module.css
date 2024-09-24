@@ -1,5 +1,5 @@
 .jari{
-    border: solid 2px red;
+    /* border: solid 2px red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,10 +9,25 @@
 .containerJari{
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .textContainer{
     display: flex;
     flex-direction: column;
+    text-align: justify;
+}
+
+.textContainer h1{
     text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin: 20px;
+}
+
+.textContainer p{
+    text-align:left;
+    font-size: 1.3rem;
+    color: black;
 }

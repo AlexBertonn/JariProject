@@ -9,34 +9,34 @@ import Container from '../../components/Container';
 
 function Home() {
 
-  const [isLargeScreen, setIsLargeScreen] = useState(
-    window.innerWidth >= 1280 && window.innerHeight >= 720
-);
+//   const [isLargeScreen, setIsLargeScreen] = useState(
+//     window.innerWidth >= 1280 && window.innerHeight >= 720
+// );
 
-useEffect(() => {
-    const handleResize = () => {
-        const isLarge = window.innerWidth >= 1280 && window.innerHeight >= 720;
-        setIsLargeScreen(isLarge);
+// useEffect(() => {
+//     const handleResize = () => {
+//         const isLarge = window.innerWidth >= 1280 && window.innerHeight >= 720;
+//         setIsLargeScreen(isLarge);
 
-        // Adiciona ou remove a classe 'no-scroll' com base no tamanho da tela
-        if (isLarge) {
-            document.body.classList.add('no-scroll');
-        } else {
-            document.body.classList.remove('no-scroll');
-        }
-    };
+//         // Adiciona ou remove a classe 'no-scroll' com base no tamanho da tela
+//         if (isLarge) {
+//             document.body.classList.add('no-scroll');
+//         } else {
+//             document.body.classList.remove('no-scroll');
+//         }
+//     };
 
-    // Adiciona o listener para redimensionamento
-    window.addEventListener('resize', handleResize);
+//     // Adiciona o listener para redimensionamento
+//     window.addEventListener('resize', handleResize);
 
-    // Executa a lógica de redimensionamento inicialmente
-    handleResize();
+//     // Executa a lógica de redimensionamento inicialmente
+//     handleResize();
 
-    // Limpeza do listener
-    return () => {
-        window.removeEventListener('resize', handleResize);
-    };
-}, []);
+//     // Limpeza do listener
+//     return () => {
+//         window.removeEventListener('resize', handleResize);
+//     };
+// }, []);
 
 
   return (
