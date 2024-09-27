@@ -1,0 +1,33 @@
+.codigo{
+    /* border: solid 2px red; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.containerCodigo{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.textContainer h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin: 20px;
+}
+
+.textContainer p{
+    text-align:left;
+    font-size: 1.3rem;
+    color: black;
+}

@@ -46,12 +46,12 @@ function Conteudos(){
                 <div className={styles.boxConteudos}>
                     <Link to='/jari' className={styles.btnTest}> 
                     <h1 className={styles.h1Conteudos}>O QUE É A JARI?</h1>
-                    <p><img src={logo} alt="Jari" style={{width:'150px', height:'150px'}}/></p>
+                    {/* <p><img src={logo} alt="Jari" style={{width:'150px', height:'150px'}}/></p> */}
                     </Link>
                 </div>
                 <div className={styles.boxConteudos}>
                     <Link to='/material' className={styles.btnTest}> 
-                    <h1 className={styles.h1Conteudos}>MATERIAL DIDÁTICO</h1>
+                    <h1 className={styles.h1Conteudos}>PRIMEIROS PASSOS ANÁLISE</h1>
                     </Link>
                 </div>
                 <div className={styles.boxConteudos}>

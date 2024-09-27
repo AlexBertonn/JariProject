@@ -19,7 +19,6 @@ function Jari(){
                   A JARI tem as seguintes competências:
                   Julgar os recursos interpostos pelos infratores.
                   Solicitar informações complementares aos órgãos e entidades de trânsito e rodoviários, para uma melhor análise da situação.
-                  A JARI da Cidade de São Paulo é composta por 27 juntas, que se reúnem semanalmente. Cada junta é composta por seis membros, organizados em duas turmas de três membros.
               </p>
 
               <br />
