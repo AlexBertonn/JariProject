@@ -30,7 +30,7 @@ function Diligencias(){
             <div className={styles.textContainer}>
               <br />
               <br />
-              <h2> O que é uma diligências</h2>
+              <h2> O que é uma diligências?</h2>
               <p> Uma diligência de recursos é um procedimento realizado para investigar ou coletar informações adicionais sobre um recurso interposto em um processo. Esse tipo de diligência geralmente ocorre em contextos jurídicos, como em tribunais ou em processos administrativos.
               </p>
               <br />
