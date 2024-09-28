@@ -8,9 +8,8 @@ function Contato(){
         <>
         <Header/>
         <Container>
-            <main className={styles.testSobre}>
-                <h1>Contato Aqui!</h1>
-                <p> Paragfrafo</p>
+            <main className={styles.testeContato}>
+                <h1>(31) 3501-3000</h1>
             </main>
         
         </Container>

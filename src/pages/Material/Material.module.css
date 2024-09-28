@@ -50,3 +50,68 @@
     background-color: black; /* Cor da bolinha */
     border-radius: 50%; /* Torna o elemento redondo */
 }
+
+/* teste do header em cada página */
+.header2{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.959);
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background-image: url('../../images/backteste.png');
+    border-bottom: 4px solid red;
+    background-size: cover;  
+}
+
+.navegation2{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    /* border: solid 2px red; */
+    justify-content: space-between;
+}
+
+.navegation2 h1{
+    font-size: 5rem;
+    font-weight: 200;
+    margin-top: 30px;
+    color: white;
+    width: 80vw;
+    text-align: center;
+}
+
+.nav2{
+    width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: solid 2px rgb(234, 0, 255);*/
+} 
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border: solid 2px red;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+}
+
+.btn:hover{
+    color: #ed1b24;
+    border: 2px solid #fff;
+    transition: 0.2s ease-in-out;
+}
+

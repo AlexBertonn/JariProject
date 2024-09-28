@@ -3,17 +3,34 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Container from '../../components/Container';
 
+import { Link } from 'react-router-dom';
 function Diligencias(){
     return(
 
     <>
-      <Header/>
+      <header className={styles.header2}>
+            <nav className={styles.navegation2}>
+            <div className={styles.nav2}>
+              <Link to="/" className={styles.btn}>HOME</Link>
+              <Link to="/conteudos" className={styles.btn}>CONTEUDOS</Link>
+              <Link to="/contato" className={styles.btn}>CONTATO</Link>
+            </div>
+            <h1>DILIGÊNCIAS</h1>
+            </nav>
+          </header>
+
+
+
+
+      {/* <Header/> */}
       <Container>
       <section className={styles.containerDiligencia}>
         <main className={styles.diligencia}>
             <div className={styles.imgCard}></div>
             <div className={styles.textContainer}>
-              <h1> DILIGÊNCIAS</h1>
+              <br />
+              <br />
+              <h2> O que é uma diligências</h2>
               <p> Uma diligência de recursos é um procedimento realizado para investigar ou coletar informações adicionais sobre um recurso interposto em um processo. Esse tipo de diligência geralmente ocorre em contextos jurídicos, como em tribunais ou em processos administrativos.
               </p>
               <br />
@@ -28,7 +45,6 @@ function Diligencias(){
               <br />
               <h2>Resultado</h2>
               <p>O resultado da diligência pode impactar a decisão final sobre o recurso, permitindo que o tribunal ou autoridade competente tome uma decisão mais informada e justa.</p>
-              <br />
               <br />
               <h3>Exemplo</h3>
               <p>Se uma parte recorre de uma decisão judicial, pode ser realizada uma diligência para ouvir testemunhas que não foram ouvidas anteriormente ou para obter documentos que possam comprovar a argumentação do recorrente.</p>

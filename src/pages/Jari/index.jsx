@@ -3,17 +3,35 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Container from '../../components/Container';
 
+import { Link } from 'react-router-dom';
+
 function Jari(){
     return(
 
         <>
-      <Header/>
+          <header className={styles.header2}>
+            <nav className={styles.navegation2}>
+            <div className={styles.nav2}>
+              <Link to="/" className={styles.btn}>HOME</Link>
+              <Link to="/conteudos" className={styles.btn}>CONTEUDOS</Link>
+              <Link to="/contato" className={styles.btn}>CONTATO</Link>
+            </div>
+            <h1>O QUE É A JARI?</h1>
+            </nav>
+          </header>
+
+
+
+
+      {/* <Header/> */}
       <Container>
       <section className={styles.containerJari}>
         <main className={styles.jari}>
             <div className={styles.imgCard}></div>
             <div className={styles.textContainer}>
-              <h1> O que é a Jari?</h1>
+              {/* <h1> O que é a Jari?</h1> */}
+              <br />
+              <br />
               <p> A JARI (Junta Administrativa de Recursos de Infrações) é um órgão do Sistema Nacional de Trânsito (SNT) que analisa recursos de infrações de trânsito. A JARI é responsável por julgar os recursos interpostos por motoristas que foram multados, sendo que a maioria dos recursos são em relação a multas de trânsito. 
                   A JARI foi instituída pela Lei Federal nº 9.503, de 23 de setembro de 1997, no artigo 16 do Código de Trânsito Brasileiro (CTB). 
                   A JARI tem as seguintes competências:

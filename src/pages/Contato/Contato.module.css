@@ -1,11 +1,10 @@
-.testeSobre{
+.testeContato{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-image: url('../../images/backConteudos.png');
 }
-h1{
-    color: #fff;
-}
-p{
+.testeContato h1{
     color: #fff;
 }

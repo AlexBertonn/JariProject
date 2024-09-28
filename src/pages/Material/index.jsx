@@ -3,17 +3,35 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Container from '../../components/Container';
 
+import { Link } from 'react-router-dom';
+
 function Material(){
     return(
 
     <>
-      <Header/>
+      <header className={styles.header2}>
+            <nav className={styles.navegation2}>
+            <div className={styles.nav2}>
+              <Link to="/" className={styles.btn}>HOME</Link>
+              <Link to="/conteudos" className={styles.btn}>CONTEUDOS</Link>
+              <Link to="/contato" className={styles.btn}>CONTATO</Link>
+            </div>
+            <h1>PRIMEIROS PASSOS PARA ANÁLISE</h1>
+            </nav>
+          </header>
+
+
+
+
+      {/* <Header/> */}
       <Container>
       <section className={styles.containerPasso}>
         <main className={styles.passo}>
             <div className={styles.imgCard}></div>
             <div className={styles.textContainer}>
-              <h1> Primeiros passos para análise</h1>
+              {/* <h1> Primeiros passos para análise</h1> */}
+              <br />
+              <br />
               <h2> 1º Conferencia de montagem </h2>
               <p> A conferência de montagem é o primeiro passo para que o analista identifique se há junto ao recurso todos os dados 
                 necessários para análise do mesmo. É de suma importância que o analista cheque: capa, recurso, documentação, Auto de Infração de Trânsito e possíveis imagens anexas pelo recorrente.
