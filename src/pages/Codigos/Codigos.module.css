@@ -95,3 +95,14 @@
     border: 2px solid #fff;
     transition: 0.2s ease-in-out;
 }
+
+
+.cod{
+    display: flex;
+    align-items: center;
+
+}
+
+.cod p{
+    margin-left: 10px;
+}
