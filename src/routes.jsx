@@ -11,7 +11,7 @@ import Importante from "./pages/Importante"
 
 function AppRoutes(){
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/jariproject">
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/conteudos" element={<Conteudos/>}></Route>
